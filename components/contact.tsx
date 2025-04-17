@@ -152,7 +152,7 @@ export default function Contact() {
                   <div>
                     <h4 className="text-white font-medium">LinkedIn</h4>
                     <a
-                      href="https://github.com/RaviprabhaSanduniJayalal"
+                      href="www.linkedin.com/in/raviprabha-sanduni-7b2999279"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-blue-400 transition-colors"

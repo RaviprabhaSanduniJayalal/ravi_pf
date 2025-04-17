@@ -34,10 +34,12 @@ export default function InternshipCallout() {
               </p>
             </div>
 
-            <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-6 h-auto rounded-xl shadow-lg">
-              <Download className="mr-2 h-5 w-5" />
-              <span className="text-base">Download My CV</span>
-            </Button>
+            <a href="/cv/SC12351.pdf" download>
+              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2 rounded-md flex items-center">
+              <Download className="mr-2 h-4 w-4" />
+              Download CV
+              </Button>
+            </a>
           </div>
         </div>
       </motion.div>
