@@ -1,3 +1,5 @@
+
+
 "use client"
 
 import type React from "react"
@@ -36,7 +38,7 @@ export default function Contact() {
         <SectionHeading title="Contact Me" subtitle="Let's connect and discuss opportunities" />
 
         <div className="grid md:grid-cols-2 gap-12">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -116,7 +118,7 @@ export default function Contact() {
                 </Button>
               </form>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
@@ -135,10 +137,10 @@ export default function Contact() {
                   <div>
                     <h4 className="text-white font-medium">Email</h4>
                     <a
-                      href="mailto:raviprabha@example.com"
+                      href="mailto:sanduniraviprabha@gmail.com"
                       className="text-gray-300 hover:text-purple-400 transition-colors"
                     >
-                      raviprabha@example.com
+                      sanduniraviprabha@gmail.com
                     </a>
                   </div>
                 </div>
@@ -150,12 +152,12 @@ export default function Contact() {
                   <div>
                     <h4 className="text-white font-medium">LinkedIn</h4>
                     <a
-                      href="https://linkedin.com/in/raviprabha"
+                      href="https://github.com/RaviprabhaSanduniJayalal"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-blue-400 transition-colors"
                     >
-                      linkedin.com/in/raviprabha
+                      www.linkedin.com/in/raviprabha-sanduni-7b2999279
                     </a>
                   </div>
                 </div>
@@ -167,12 +169,12 @@ export default function Contact() {
                   <div>
                     <h4 className="text-white font-medium">GitHub</h4>
                     <a
-                      href="https://github.com/raviprabha"
+                      href="https://github.com/RaviprabhaSanduniJayalal"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-white transition-colors"
                     >
-                      github.com/raviprabha
+                      https://github.com/RaviprabhaSanduniJayalal
                     </a>
                   </div>
                 </div>
