@@ -175,7 +175,7 @@ export default function About() {
                 transition={{ duration: 0.6 }}
                 className="relative mx-auto lg:mx-0 max-w-xs"
               >
-                <div className="relative w-full aspect-square rounded-2xl overflow-hidden border-2 border-purple-500/20">
+                {/* <div className="relative w-full aspect-square rounded-2xl overflow-hidden border-2 border-purple-500/20">
                   <Image
                     src="/images/raviprabha-profile.png"
                     alt="Raviprabha Sanduni Jayalal"
@@ -183,7 +183,7 @@ export default function About() {
                     className="object-cover"
                     priority
                   />
-                </div>
+                </div> */}
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full opacity-20 blur-xl"></div>
               </motion.div>
 
