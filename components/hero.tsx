@@ -106,9 +106,15 @@ export default function Hero() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
-              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2 rounded-md">
+              {/* <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2 rounded-md">
                 <Download className="mr-2 h-4 w-4" /> Download CV
+              </Button> */}
+            <a href="/cv/SC12351.pdf" download>
+              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2 rounded-md flex items-center">
+              <Download className="mr-2 h-4 w-4" />
+              Download CV
               </Button>
+            </a>
               <Link href="#contact" >
                 <Button
                   variant="outline"
@@ -122,7 +128,7 @@ export default function Hero() {
             {/* Social Links */}
             <div className="flex gap-4 justify-center lg:justify-start">
               <a
-                href="https://github.com/raviprabha"
+                href="https://github.com/RaviprabhaSanduniJayalal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-gray-800/60 text-gray-300 hover:text-white hover:bg-gray-700/80 transition-colors backdrop-blur-sm"
@@ -131,7 +137,7 @@ export default function Hero() {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/in/raviprabha"
+                href="www.linkedin.com/in/raviprabha-sanduni-7b2999279"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-gray-800/60 text-gray-300 hover:text-white hover:bg-gray-700/80 transition-colors backdrop-blur-sm"
@@ -140,7 +146,7 @@ export default function Hero() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:raviprabha@example.com"
+                href="mailto:sanduniraviprabha@gmail.com"
                 className="p-2 rounded-full bg-gray-800/60 text-gray-300 hover:text-white hover:bg-gray-700/80 transition-colors backdrop-blur-sm"
                 aria-label="Email"
               >

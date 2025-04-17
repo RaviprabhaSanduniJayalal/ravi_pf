@@ -68,10 +68,15 @@ const skillCategories = [
 // Projects data
 const projects = [
   {
-    title: "E-Learning Platform",
-    description: "A comprehensive platform for online education with interactive courses and quizzes.",
+    title: "Ceylon Fusion",
+    description: `A web-based e-commerce and booking platform 
+    tailored for a business in a Cinnamon Estate, it 
+    simplifies online sales and booking processes, 
+    enhancing customer interaction and management 
+    efficiency.`,
+                
     image: "/placeholder.svg?height=300&width=500",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    technologies: ["SpringBoot", "React", "Typescript", "postgreSQL","TailwindCSS"],
     github: "#",
     demo: "#",
   },
@@ -104,16 +109,12 @@ const projects = [
 // Education data
 const educationData = [
   {
-    degree: "Bachelor of Science in Computer Science",
+    degree: "Bachelor of Computer Science",
     institution: "University of Ruhuna",
-    duration: "2020 - 2024 (Expected)",
+    duration: "2022 - 2026 (Expected)",
     description:
       "Focusing on software engineering, web development, and database management systems. Maintaining a strong academic record with a focus on practical project implementation.",
-    achievements: [
-      "Dean's List for Academic Excellence (2021-2022)",
-      "Best Group Project Award for Innovative Web Application",
-      "Participated in IEEE Programming Competition",
-    ],
+  
   },
 ]
 
@@ -269,7 +270,7 @@ export default function About() {
                 <h3 className="text-lg font-medium mb-3 text-white">Connect With Me</h3>
                 <div className="flex justify-between">
                   <Link
-                    href="https://github.com/raviprabha"
+                    href="https://github.com/RaviprabhaSanduniJayalal"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-lg bg-gray-700/50 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors"
@@ -277,7 +278,7 @@ export default function About() {
                     <Github className="h-5 w-5" />
                   </Link>
                   <Link
-                    href="https://linkedin.com/in/raviprabha"
+                    href="https://www.linkedin.com/in/raviprabha-sanduni-7b2999279/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-lg bg-gray-700/50 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors"
@@ -300,7 +301,7 @@ export default function About() {
                     </svg>
                   </Link>
                   <Link
-                    href="mailto:raviprabha@example.com"
+                    href="mailto:sanduniraviprabha@gmail.com"
                     className="p-2 rounded-lg bg-gray-700/50 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors"
                   >
                     <svg
@@ -377,7 +378,7 @@ export default function About() {
                 </div>
 
                 <p className="text-gray-300 text-lg mb-6 max-w-3xl">
-                  I'm an undergraduate student at the University of Ruhuna, passionate about software engineering and
+                  I'm a computer science undergraduate student at the University of Ruhuna, passionate about software engineering and
                   full-stack development. My journey in technology began with a curiosity about how digital solutions
                   can solve real-world problems.
                 </p>
@@ -389,79 +390,69 @@ export default function About() {
                 </p>
 
                 <p className="text-gray-300 mb-8 max-w-3xl">
-                  My goal is to secure a Software Engineering or Full-Stack internship where I can apply my skills,
+                  My goal is to secure a Software Engineering or Full-Stack developement internship where I can apply my skills,
                   learn from industry professionals, and contribute to meaningful projects that make a difference.
                 </p>
 
                 <div className="flex flex-wrap gap-4">
                   <div className="flex items-center">
                     <GraduationCap className="h-5 w-5 text-purple-400 mr-2" />
-                    <span className="text-gray-300">BSc in Computer Science</span>
+                    <span className="text-gray-300">Bachelor of Computer Science </span>
                   </div>
                   <div className="flex items-center">
                     <Calendar className="h-5 w-5 text-blue-400 mr-2" />
-                    <span className="text-gray-300">Expected Graduation: 2024</span>
+                    <span className="text-gray-300">Expected Graduation: 2026</span>
                   </div>
-                  <div className="flex items-center">
-                    <Award className="h-5 w-5 text-purple-400 mr-2" />
-                    <span className="text-gray-300">Dean's List 2021-2022</span>
-                  </div>
+                  
                 </div>
               </motion.div>
             </div>
 
+           
             {/* Skills Section */}
-            <div ref={skillsRef} id="skills-section" className="scroll-mt-24">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <h3 className="text-2xl font-bold mb-6 text-white">
-                  <span className="mr-3">🛠️</span>
-                  Technical Skills
-                </h3>
+              <div ref={skillsRef} id="skills-section" className="scroll-mt-24">
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <h3 className="text-2xl font-bold mb-6 text-white">
+                    <span className="mr-3">🛠️</span>
+                    Technical Skills
+                  </h3>
 
-                <div className="grid md:grid-cols-2 gap-6">
-                  {skillCategories.map((category, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="bg-gray-800/40 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50"
-                    >
-                      <div className="flex items-center mb-4">
-                        <div className="p-2 rounded-lg bg-gray-700/50 mr-3">{category.icon}</div>
-                        <h3 className="text-lg font-semibold text-white">{category.title}</h3>
-                      </div>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {skillCategories.map((category, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        className="bg-gray-800/40 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50"
+                      >
+                        <div className="flex items-center mb-4">
+                          <div className="p-2 rounded-lg bg-gray-700/50 mr-3">{category.icon}</div>
+                          <h3 className="text-lg font-semibold text-white">{category.title}</h3>
+                        </div>
 
-                      <div className="space-y-4">
-                        {category.skills.map((skill, skillIndex) => (
-                          <div key={skillIndex}>
-                            <div className="flex justify-between mb-1">
-                              <span className="text-gray-300">{skill.name}</span>
-                              <span className="text-gray-400">{skill.level}%</span>
-                            </div>
-                            <div className="w-full bg-gray-700 rounded-full h-2">
-                              <motion.div
-                                className="h-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500"
-                                initial={{ width: 0 }}
-                                whileInView={{ width: `${skill.level}%` }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 1, delay: 0.2 }}
-                              ></motion.div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
+                        <ul className="flex flex-wrap gap-2">
+                          {category.skills.map((skill, skillIndex) => (
+                            <li
+                              key={skillIndex}
+                              className="px-3 py-1 text-sm font-medium text-white bg-gradient-to-br from-purple-600 to-indigo-500 rounded-full shadow-sm"
+                            >
+                              {skill.name}
+                            </li>
+                          ))}
+                        </ul>
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+              </div>
+
 
             {/* Projects Section */}
             <div ref={projectsRef} id="projects-section" className="scroll-mt-24">
@@ -626,15 +617,7 @@ export default function About() {
 
                           <p className="text-gray-300 mb-4">{item.description}</p>
 
-                          <h5 className="text-sm font-medium text-purple-400 mb-2">Achievements:</h5>
-                          <ul className="space-y-2">
-                            {item.achievements.map((achievement, achievementIndex) => (
-                              <li key={achievementIndex} className="flex items-start">
-                                <span className="text-purple-500 mr-2">•</span>
-                                <span className="text-gray-300">{achievement}</span>
-                              </li>
-                            ))}
-                          </ul>
+                          
                         </div>
                       </motion.div>
                     ))}
@@ -657,8 +640,8 @@ export default function About() {
                         "Web Development",
                         "Software Engineering",
                         "Computer Networks",
-                        "Mobile Application Development",
-                        "Cloud Computing",
+                        "Operating Systems",
+                        "Distributed Systems",
                       ].map((course, courseIndex) => (
                         <div key={courseIndex} className="bg-gray-700/30 px-3 py-2 rounded-lg text-gray-300 text-sm">
                           {course}
@@ -666,36 +649,7 @@ export default function About() {
                       ))}
                     </div>
                   </motion.div>
-
-                  {/* Extracurricular Activities */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                  >
-                    <h4 className="text-lg font-semibold text-white mb-4">Extracurricular Activities</h4>
-                    <div className="grid md:grid-cols-2 gap-6">
-                      {extracurriculars.map((item, index) => (
-                        <div
-                          key={index}
-                          className="bg-gray-800/40 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50"
-                        >
-                          <div className="flex justify-between items-start mb-3">
-                            <div>
-                              <h5 className="text-lg font-medium text-white">{item.title}</h5>
-                              <p className="text-blue-400">{item.role}</p>
-                            </div>
-                            <div className="flex items-center text-gray-400">
-                              <Calendar className="h-4 w-4 mr-1" />
-                              <span>{item.duration}</span>
-                            </div>
-                          </div>
-                          <p className="text-gray-300">{item.description}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </motion.div>
+ 
                 </div>
               </motion.div>
             </div>
