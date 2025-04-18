@@ -39,7 +39,7 @@ export default function Footer() {
             className="flex space-x-4 mt-6 md:mt-0"
           >
             <a
-              href="https://github.com/raviprabha"
+              href="https://github.com/RaviprabhaSanduniJayalal"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
@@ -47,7 +47,7 @@ export default function Footer() {
               <Github className="h-5 w-5 text-gray-300" />
             </a>
             <a
-              href="https://linkedin.com/in/raviprabha"
+              href="https://www.linkedin.com/in/raviprabha-sanduni-7b2999279/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
@@ -55,7 +55,7 @@ export default function Footer() {
               <Linkedin className="h-5 w-5 text-gray-300" />
             </a>
             <a
-              href="mailto:raviprabha@example.com"
+              href="mailto:sanduniraviprabha@gmail.com"
               className="p-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
             >
               <Mail className="h-5 w-5 text-gray-300" />
