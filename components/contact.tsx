@@ -9,6 +9,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import SectionHeading from "./section-heading"
 
+
+
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -117,7 +119,7 @@ export default function Contact() {
               </div>
 
               {/* Optional Contact Form Button */}
-              <div className="mt-8 text-center">
+              {/* <div className="mt-8 text-center">
                 <Button
                   className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white"
                   onClick={() => {
@@ -127,7 +129,7 @@ export default function Contact() {
                 >
                   <Mail className="mr-2 h-4 w-4" /> Email Me Directly
                 </Button>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>
